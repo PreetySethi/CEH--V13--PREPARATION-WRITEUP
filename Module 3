@@ -1,0 +1,211 @@
+# Module 03 — Scanning Networks
+
+## Objective
+
+Understand how network scanning is used to discover systems, open ports, running services, and possible weaknesses in a target environment.
+Scanning transforms reconnaissance information into technical details that help build an attack surface map.
+
+---
+
+## Network Scanning Overview
+
+Network scanning is performed to:
+
+* Identify live hosts in a network
+* Discover open ports
+* Detect running services and versions
+* Identify operating systems
+* Understand network structure
+* Locate possible entry points
+
+Scanning is an active phase and may generate logs or alerts on the target network.
+
+---
+
+## Types of Scanning
+
+### Host Discovery
+
+Used to find active systems before deeper scanning.
+
+Methods:
+
+* ICMP echo requests (ping)
+* ARP scanning (local network)
+* TCP ping
+
+Examples:
+
+```
+nmap -sn 192.168.1.0/24
+nmap -PE <target>
+```
+
+---
+
+### Port Scanning
+
+Used to determine which ports are open and listening.
+
+Common scan types:
+
+* TCP Connect Scan
+
+  * Completes full TCP handshake
+  * Reliable but easier to detect
+
+```
+nmap -sT <target>
+```
+
+* SYN Scan (Half-open scan)
+
+  * Does not complete handshake
+  * Faster and stealthier
+
+```
+nmap -sS <target>
+```
+
+* UDP Scan
+
+  * Checks UDP services
+  * Slower and sometimes unreliable
+
+```
+nmap -sU <target>
+```
+
+---
+
+### Service and Version Detection
+
+Used to identify applications running on open ports.
+
+```
+nmap -sV <target>
+```
+
+Information gathered:
+
+* Service name
+* Application version
+* Possible outdated software
+
+---
+
+### OS Detection
+
+Attempts to identify the operating system based on network responses.
+
+```
+nmap -O <target>
+```
+
+---
+
+### Aggressive Scan
+
+Combines multiple techniques (OS detection, version detection, scripts, traceroute).
+
+```
+nmap -A <target>
+```
+
+---
+
+## Port States
+
+* Open
+  Port accepts connections and a service is running.
+
+* Closed
+  Port is reachable but no service is listening.
+
+* Filtered
+  Traffic is blocked by a firewall or filtering device.
+
+* Unfiltered
+  Port is accessible but state cannot be determined.
+
+---
+
+## Important Nmap Options
+
+Scan specific ports:
+
+```
+nmap -p 80,443 <target>
+```
+
+Scan port range:
+
+```
+nmap -p 1-1000 <target>
+```
+
+Scan all ports:
+
+```
+nmap -p- <target>
+```
+
+Save output:
+
+```
+nmap -oN scan.txt <target>
+nmap -oX scan.xml <target>
+```
+
+Increase speed:
+
+```
+nmap -T4 <target>
+```
+
+---
+
+## Key Concepts Learned
+
+* Open ports expose services that may be exploitable.
+* Service version detection is critical for vulnerability research.
+* Scanning speed affects accuracy and detectability.
+* Different scan types provide different levels of stealth.
+
+---
+
+## Common Services Seen During Scans
+
+* Port 21 — FTP
+* Port 22 — SSH
+* Port 23 — Telnet
+* Port 53 — DNS
+* Port 80 — HTTP
+* Port 443 — HTTPS
+* Port 3389 — RDP
+
+---
+
+## Practical Observations
+
+* Initial host discovery reduces scanning time.
+* Scanning all ports sometimes reveals unexpected services.
+* Reading Nmap output carefully is more important than running many commands.
+* Firewalls can hide real network information.
+
+---
+
+## Legal and Ethical Notes
+
+* Network scanning must only be done in authorized environments.
+* Unauthorized scanning can be considered illegal.
+* Always follow rules of engagement during testing.
+
+---
+
+## Summary
+
+Scanning networks provides technical visibility into targets by identifying hosts, ports, services, and operating systems.
+This phase is essential for planning further security testing and identifying potential attack paths.
+
+---
