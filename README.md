@@ -7,7 +7,7 @@ This repository contains my personal notes, summaries, and practice material whi
 I’m using this repo to:
 
 * Keep my learning organized
-* Track progress module by module
+* Track progress module by module 
 * Document important concepts and tools
 * Practice writing clear technical notes
 
