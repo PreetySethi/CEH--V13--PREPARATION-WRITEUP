@@ -1,0 +1,111 @@
+# Module 02 — Footprinting & Reconnaissance
+
+## Objective
+
+Understand how information gathering works before active testing.
+The goal is to collect useful data about a target using passive and legal techniques.
+
+---
+
+## Key Concepts
+
+### Footprinting
+
+Footprinting is the process of gathering information about a target system, organization, or network before attempting any form of scanning or exploitation.
+
+**Main goals:**
+
+* Identify target infrastructure
+* Find public information
+* Understand attack surface
+
+---
+
+### Passive vs Active Reconnaissance
+
+**Passive Recon**
+
+* No direct interaction with target
+* Hard to detect
+* Uses public information
+
+Examples:
+
+* Search engines
+* Social media
+* Public records
+
+**Active Recon**
+
+* Direct interaction with target systems
+* Easier to detect
+* Usually done later during scanning
+
+Examples:
+
+* DNS queries
+* Network probing
+
+---
+
+## OSINT (Open Source Intelligence)
+
+Information collected from publicly available sources.
+
+Common sources:
+
+* Search engines
+* Company websites
+* Job postings
+* Social media profiles
+* Public documents
+
+---
+
+## DNS & Domain Footprinting
+
+Useful information:
+
+* Domain owner details (Whois)
+* Nameservers
+* IP addresses
+* Subdomains
+
+Basic commands/tools mentioned:
+
+* whois
+* nslookup
+* dig (concept)
+
+---
+
+## Tools / Techniques Introduced
+
+* Google search operators (basic dorking)
+* Whois lookup
+* DNS enumeration concepts
+* Website information gathering
+
+---
+
+## Important Notes
+
+* Reconnaissance is usually the longest phase of an assessment.
+* Small public details can reveal major security risks.
+* Always stay within legal and authorized boundaries.
+
+---
+
+## Personal Notes
+
+* Passive recon feels like investigation rather than hacking.
+* Organization of collected info is very important.
+* Need more practice with DNS concepts.
+
+---
+
+## Summary
+
+Footprinting helps understand a target before any technical attack begins.
+Good reconnaissance makes later stages easier and more efficient.
+
