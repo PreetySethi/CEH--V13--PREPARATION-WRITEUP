@@ -1,0 +1,73 @@
+# CEH v13 – Module 1 Completion Notes
+
+## 📘 Module
+
+**Certified Ethical Hacker (CEH v13)**
+**Module 1: Introduction to Ethical Hacking**
+
+---
+
+## What I Learned
+
+###  Ethical Hacking Fundamentals
+
+* Difference between ethical hackers, black hat, and gray hat hackers
+* Importance of authorization and legal boundaries
+* Real-world purpose of penetration testing
+
+###  Information Security Concepts
+
+* Confidentiality, Integrity, Availability (CIA Triad)
+* Risk, threat, vulnerability, and attack surface
+* Security controls (preventive, detective, corrective)
+
+###  Hacker Classes & Attack Phases
+
+* Script kiddies, cyber criminals, insiders, hacktivists, nation-state actors
+* Ethical hacking methodology:
+
+  * Footprinting & reconnaissance
+  * Scanning networks
+  * Gaining access
+  * Maintaining access
+  * Clearing tracks
+
+### Penetration Testing Basics
+
+* Black-box, white-box, and gray-box testing
+* Rules of engagement
+* Reporting and documentation
+
+### Key Skills Introduced
+
+* Critical thinking and problem-solving mindset
+* Understanding security from an attacker’s perspective
+* Responsible disclosure principles
+
+---
+
+## Tools & Concepts Mentioned
+
+* Kali Linux (overview)
+* Nmap (concept introduction)
+* OSINT basics
+* Network and system security fundamentals
+
+---
+
+## Personal Reflection
+
+This module helped me understand the ethical and legal foundation of cybersecurity.
+Before learning technical attacks, understanding **why** and **how** ethical hackers operate is essential. I now have a clearer roadmap for upcoming modules focusing on reconnaissance, scanning, and exploitation techniques.
+
+---
+
+## Next Steps
+
+* Start Module 2 (Footprinting & Reconnaissance)
+* Practice basic Linux commands
+* Build a small cybersecurity notes repository
+* Document labs and challenges regularly
+
+
+> Learning cybersecurity is a journey — documenting progress helps reinforce knowledge.
